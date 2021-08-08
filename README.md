@@ -5,6 +5,8 @@ python version used - 3.9
 
 django version used - 3.0.5
 
+Pillow
+
 clone the project
 ```
 git clone https://github.com/Jyotirmay02/MyExam.git
