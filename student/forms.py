@@ -13,16 +13,16 @@ class StudentUserForm(forms.ModelForm):
         # widgets = {
         # 'password': forms.PasswordInput()
         # }
-    def clean_email(self): # Validates the email Field
-        email = self.cleaned_data.get('email')
-        if (email == ""):
-            print("error 1")
-            raise forms.ValidationError('This field cannot be left blank')
-        for instance in User.objects.all():
-            if instance.email == email:
-                print(" Error 2")
-                raise forms.ValidationError(email + ' is already present')
-        return email
+#     def clean_email(self): # Validates the email Field
+#         email = self.cleaned_data.get('email')
+#         if (email == ""):
+#             print("error 1")
+#             raise forms.ValidationError('This field cannot be left blank')
+#         for instance in User.objects.all():
+#             if instance.email == email:
+#                 print(" Error 2")
+#                 raise forms.ValidationError(email + ' is already present')
+#         return email
 
 class StudentForm(forms.ModelForm):
     class Meta:
