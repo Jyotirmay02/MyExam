@@ -17,7 +17,3 @@ class Student(models.Model):
         return self
     def __str__(self):
         return self.user.first_name
-    def isExists(self):
-        if User.objects.filter(email = self.email):
-            return True
-        return False
