@@ -20,6 +20,16 @@ python -m pip install -r requirements.txt
 run the following commands for migrations
 ```
 python manage.py makemigrations
+```
+
+If this error comes ignore it and move on
+
+Migrations for 'auth':
+    - Alter field email on user
+    
+Migrations for 'student':
+    - Alter field mobile on student
+```
 python manage.py migrate
 python manage.py makemigrations
 ```
