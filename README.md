@@ -2,12 +2,15 @@
 RUN PROJECT
 
 python version used - 3.9
+
 django version used - 3.0.5
+
 clone the project
 ```
 git clone https://github.com/Jyotirmay02/MyExam.git
 ```
 move to the MyExam directory
+
 run the following command
 ```
 python -m pip install -r requirements.txt
